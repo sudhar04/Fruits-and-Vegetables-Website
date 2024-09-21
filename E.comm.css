@@ -1,0 +1,323 @@
+/* Fruits and Vegetable site.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 150vh;
+    background-color: whitesmoke;
+    scroll-behavior: smooth;
+    
+}
+
+header {
+    background-color: greenyellow;
+    padding: 10px;
+    text-align: center;
+    box-sizing: border-box;
+    
+}
+
+#searchBar {
+    padding: 10px;
+    width: 50%;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+#products {
+    flex: 2;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.product img{
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+.product {
+    border: 1px solid #ddd;
+    margin: 10px;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    background-color: whitesmoke;
+}
+
+.add-to-cart {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#cart {
+    flex: 1;
+    border: 1px solid #ddd;
+    padding: 20px;
+    min-height: 34px;
+}
+/* navbar*/
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:yellowgreen;
+    padding: 1rem;
+}
+
+.navbar .logo {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.navbar .nav-links li {
+    list-style: none;
+}
+
+.navbar .nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.navbar .nav-links a:hover {
+    background-color: #555;
+}
+
+/*  new */
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+#productList, #cartItems {
+    list-style: none;
+    padding: 0;
+}
+
+#productList li, #cartItems li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+#cart {
+    margin-top: 20px;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/*contact and about us */
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    padding: 50px 20px;
+}
+
+.about {
+    display: flex;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 50px 20px;
+}
+
+.about img {
+    width: 50%;
+    border-radius: 10px;
+    margin-right: 30px;
+}
+
+.about-text {
+    max-width: 500px;
+}
+
+.about-text span {
+    display: inline-block;
+    font-size: 28px;
+    font-weight: bold;
+    color: #27ae60;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.about-text .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #27ae60;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.about-text .btn:hover {
+    background-color: #1e8449;
+}
+
+.contact {
+    background-color: #fff;
+    padding: 50px 20px;
+}
+
+.contact h3 {
+    font-size: 32px;
+    color: #27ae60;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+}
+
+.contact form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact form input,
+.contact form textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.contact form .btn {
+    padding: 10px 20px;
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact form .btn:hover {
+    background-color: #1e8449;
+}
+
+/* Responsive Design for Mobile*/
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header h1 {
+        font-size: 1.2em;
+        margin-bottom: 10px;
+    }
+
+    #searchBar {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-links li {
+        margin: 5px 0;
+        text-align: left;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1em;
+    }
+
+    #searchBar {
+        font-size: 0.9em;
+    }
+
+    .nav-links a {
+        font-size: 0.9em;
+    }
+}
+
+.top{
+    text-decoration: none;
+    color:white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #28a745;
+    border: none;
+    padding: 10px;
+
+}
